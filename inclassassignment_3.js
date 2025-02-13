@@ -38,3 +38,17 @@ inventory.removeLatestItem(); // Removing latest
 console.log(inventory.items); // View items remaining
 inventory.removeFirstItem(); // Removing first 
 console.log(inventory.items); // View items remaining
+
+// Task 7
+
+let employees = [
+    { name: "Alice", position: "Developer", salary: 70000 },
+    { name: "Bob", position: "Designer", salary: 60000 },
+    { name: "Charlie", position: "Manager", salary: 90000 }
+];
+
+function findEmployee(employeeList, name) {
+    return employeeList.find(employee => employee.name === name);
+}
+
+console.log(findEmployee(employees, "Charlie"));
