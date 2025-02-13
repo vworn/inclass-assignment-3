@@ -52,3 +52,21 @@ function findEmployee(employeeList, name) {
 }
 
 console.log(findEmployee(employees, "Charlie"));
+
+// Task 8
+
+let orders1 = [
+    { id: 1, customer: "Alice" }, 
+    { id: 2, customer: "Bob" }
+];
+
+let orders2 = [
+    { id: 3, customer: "Charlie" },
+    { id: 4, customer: "David" }
+];
+
+function combineOrders(orderList1, orderList2) {
+    return [...orderList1, ...orderList2];
+}
+
+console.log(combineOrders(orders1, orders2));
